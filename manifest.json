@@ -1,0 +1,17 @@
+{
+   "browser_action": {
+      "default_icon": "search32.png",
+      "default_popup": "search.html",
+      "default_title": "VerbatimSearch"
+   },
+   "description": "Google verbatim search",
+   "icons": {
+      "32": "search32.png",
+      "16": "search16.png"
+   },
+   "manifest_version": 2,
+   "name": "verbatim search",
+   "permissions": [ "tabs" ],
+   "version": "0.1",
+   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}

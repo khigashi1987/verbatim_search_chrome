@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Google verbatim search</title>
+  <meta charset="utf-8" />
+  <style>
+  body {
+	margin: 8px;
+	padding: 0;
+	width: 350px;
+  }
+  
+  form{
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #aaa;
+  }
+  
+  input[type='submit'] {
+	float: right;
+	width: 75px;
+	cursor: pointer;
+  }
+
+  input[type='text'] {
+	width: 200px;
+	outline: none;
+	line-height: 20px;
+	font-size: 13pt;
+	border: 0;
+	vertical-align: middle;
+	padding: 7px 5px 6px;
+  }
+
+  .button {
+	color: white;
+	font-size: 13pt;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 29px;
+	margin-left: 20px;
+	padding: 4px 10px;
+	border: 0;
+	border-right: 1px solid #CCC;
+	background-color: rgb(6, 5, 54);
+  }
+
+  #form img {
+	vertical-align: middle;
+	margin-left: 5px;
+  }
+
+  input {
+	font: normal 14px/18px 'Roboto', sans-serif;
+  }
+
+  </style>
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="search.js"></script>
+</head>
+<body>
+	<div class="search">
+		<form id="form">
+			<img id="icon" src="search32.png" width="24" height="24"/>
+			<input placeholder="Search terms" type="text" id="query" />
+			<input id="submit" class="i18n button" data-i18n="search" type="submit" value="Search" />
+		</form>		
+	</div>
+</body>
+</html>
